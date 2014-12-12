@@ -23,6 +23,7 @@ gem 'normalize-scss'
 # Assets
 
 gem "jquery-middleman"
+gem 'rails-assets-skrollr'
 
 # Optimization
 
