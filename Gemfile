@@ -1,6 +1,7 @@
 # If you do not have OpenSSL installed, update
 # the following line to use "http://" instead
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 gem "middleman", "~>3.3.7"
 
@@ -37,3 +38,7 @@ gem 'middleman-imageoptim'
 gem 'rack-contrib'
 
 # Development
+
+gem 'rails-assets-normalize-scss'
+
+gem 'sass'
