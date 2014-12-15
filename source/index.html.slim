@@ -62,8 +62,9 @@ title: Bookrepublic, the Reader
       .wrap
         .grid--center
           .grid__item.desk-6-12
-            p.beta.align--center
-              | How do we count characters?
+            .hero__heading
+              h3.beta.align--center
+                | How do we count characters?
             .hero__text
               ul
                 li.align--center
@@ -75,14 +76,17 @@ title: Bookrepublic, the Reader
                 li.align--center
                   | 4. a user-related log is written with the position in the book and the number of characters read. 
           .grid__item.desk-6-12
-            p.beta.align--center
-              | How do we measure image sizes?
+            .hero__heading
+              h3.beta.align--center
+                | How do we measure image sizes?
             .hero__text
               ul
                 li.align--center
                   | 1. the character count includes stats for images;
                 li.align--center
-                  | 2. an image is considered to be equal to a number of characters based on its dimensions (H * W * X multiplication factor);
+                  | 2. an image is considered to be equal to a number of characters based on its dimensions 
+                  br
+                  | (H * W * X multiplication factor);
                 li.align--center
                   | 3. the 'multiplication factor' is configurable per partner/book, and defaults to 0.001.
 .hero--sixth
@@ -199,7 +203,7 @@ title: Bookrepublic, the Reader
   .hero__body--h100
     .hero__body__inner
       .wrap
-        .grid--middle
+        .grid--top
           .grid__item.desk-4-12
             .hero__heading
               img.space--bottom-5.wow.zoomIn data-wow-delay="0.5s" src="/images/server.png" alt="Server"
