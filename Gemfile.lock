@@ -133,6 +133,7 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rails-assets-WOW (1.0.2)
     rails-assets-normalize-scss (3.0.2)
     rails-assets-skrollr (0.6.29)
     rb-fsevent (0.9.4)
@@ -183,6 +184,7 @@ DEPENDENCIES
   middleman-minify-html
   normalize-scss
   rack-contrib
+  rails-assets-WOW
   rails-assets-normalize-scss
   rails-assets-skrollr
   sass

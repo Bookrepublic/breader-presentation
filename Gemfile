@@ -24,6 +24,7 @@ gem 'normalize-scss'
 
 gem "jquery-middleman"
 gem 'rails-assets-skrollr'
+gem 'rails-assets-WOW'
 
 # Optimization
 
