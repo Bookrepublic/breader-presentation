@@ -2,9 +2,213 @@
 title: Bookrepublic, the Reader
 ---
 
-.hero--primary.vertical--100.centered data-0="width:100%;" data-1000="width:0%;"
-  .wrap.formatted-content
-    h1.alpha Prova
-.hero--secondary.vertical--100.centered data-1000="width:100%;" data-2000="width:0%;"
-  .wrap.formatted-content
-    h1.alpha Prova
+.hero--primary
+  .hero__body
+    .hero__body__inner
+      .hero__heading
+        .hero__image.space--bottom-2
+        h1
+          | THE READER
+        h2.alpha
+          | An on demand software for the readers.
+.hero--secondary
+  .hero__body
+    .hero__body__inner
+      .hero__heading
+        h2.alpha
+          | What does the Reader do?
+.hero--third
+  .hero__body--h100
+    .hero__body__inner
+      .hero__heading
+        img.space--bottom-5 src="/images/imports.png" alt="Import content"
+        h2
+          | Import
+      .hero__text
+        p
+          | The Reader imports data from the partner's platform and contents  are extracted, encrypted and rebuilt. Please note that no PDF/EPUB files are stored anywhere once the request is completed.
+        p
+          | The Reader works with EPUB or textual PDF.
+.hero--fourth
+  .hero__body
+    .hero__body__inner
+      .hero__heading
+        img.space--bottom-5 src="/images/read.png" alt="Read content"
+        h2
+          | Read!
+      .hero__text
+        p
+          | Connected services interact with the Reader via API calls that provide a view. Users can access their rendered ebooks through that view, via desktop or mobile browser.
+        p
+          |  The Reader makes a view based on custom settings (i.e. a 10% preview or the whole content for just one month etc. ).
+.hero--fourth
+  .wrap
+    .grid--bottom
+      .grid__item.desk-5-12.align--center.visible--on-desk
+        img src="/images/mobile.png" alt="Mac"
+      .grid__item.desk-7-12.align--center
+        img src="/images/mac.png" alt="Mobile"
+.hero--fifth
+  .hero__body--h100
+    .hero__body__inner
+      .hero__heading
+        img.space--bottom-5 src="/images/track.png" alt="Track content"
+        h2
+          | Track
+      .hero__text.space--bottom-8
+        p
+          | The Reader tracks users' reading behavior and allows partners to apply some restrictions based on it.
+      .hero__body__ruler.space--bottom-8
+      .wrap
+        .grid--center
+          .grid__item.desk-6-12
+            p.gamma.align--center
+              | How do we measure characters?
+          .grid__item.desk-6-12
+            p.gamma.align--center
+              | How do we measure image?
+.hero--sixth
+  .hero__body--h100
+    .hero__body__inner
+      .hero__heading
+        img.space--bottom-5 src="/images/data.png" alt="Obtain data"
+        h2
+          | Data
+      .hero__text
+        p
+          | The Reader provides data about every single user's reading habit that partners can use for reporting, analysis and marketing purposes.
+.hero--seventh
+  .hero__body--h100
+    .hero__body__inner
+      .wrap
+        .grid--middle
+          .grid__item.desk-6-12.space--bottom-5
+            img src="/images/custom.png" alt="Customization"
+          .grid__item.desk-6-12
+            .hero__heading
+              h2.space--bottom-3
+                | Each Reader's partner can:
+            .hero__text
+              ul
+                li
+                  | 1. obtain a custom URL;
+                li
+                  | 2. choose a unique look and feel;
+                li
+                  | 3. provide users sharing and taking notes option features.
+.hero--eighth
+  .hero__body--h100
+    .hero__body__inner
+      .wrap
+        .grid--middle
+          .grid__item.desk-6-12.space--bottom-5
+            img src="/images/book.png" alt="Book"
+          .grid__item.desk-6-12
+            .hero__heading
+              h2.space--bottom-3
+                | Content Experience:
+            .hero__text
+              ul
+                li
+                  | 1. custom Preview (chapters, shares, editorial pickings);
+                li
+                  | 2. purchase Service (users can buy a whole book);
+                li
+                  | 3. lending (content with expiration date);
+                li
+                  | 4. streaming.
+.hero--ninth
+  .hero__body
+    .hero__body__inner
+      .wrap
+        .grid--middle.space--both-8
+          .grid__item.desk-2-12
+            img src="/images/locker.png" alt="Locker"
+          .grid__item.desk-3-12.visible--on-desk
+            img src="/images/key1.png" alt="Key1"
+          .grid__item.desk-5-12.visible--on-desk
+            img src="/images/key2.png" alt="Key2"
+          .grid__item.desk-2-12.visible--on-desk
+            img src="/images/drm.png" alt="Drm"
+      .hero__heading
+        h2
+          | DRM
+      .hero__text
+        p
+          | The Reader provides his own competitive DRM service. The highest security standards in class are guranteed thanks to:
+        ul
+          li
+            | 1. content encryption;
+          li
+            | 2. content compression;
+          li
+            | 3. no epub or pdf files are provided to readers.
+.hero--tenth
+  .hero__body
+    .hero__body__inner
+      .wrap
+        .grid--middle
+          .grid__item.desk-6-12.space--both-8
+            .hero__heading
+              img.space--bottom-5 src="/images/down.png" alt="Down"
+              h2
+                | Reading API
+            .hero__text
+              p
+                | The client side reader component interacts with the server via API calls that obtain content and log user activity.
+            .hero__heading.space--top-3
+              h3
+                | Authentication
+            .hero__text
+              p
+                | Initial identification via URL token. API calls authenticated via cookie.
+          .grid__item.desk-6-12.space--both-8
+            .hero__heading
+              img.space--bottom-5 src="/images/up.png" alt="Stats API"
+              h2
+                | Stats API
+            .hero__text
+              p
+                | User activity data are made available in raw form and as aggregates.
+                | The data made available is limited to the account.
+            .hero__heading.space--top-3
+              h3
+                | Authentication
+            .hero__text
+              p
+                | API key, identifying account.
+.hero--eleventh
+  .hero__body
+    .hero__body__inner
+      .wrap
+        .grid--middle
+          .grid__item.desk-4-12.space--both-8
+            .hero__heading
+              img.space--bottom-5 src="/images/server.png" alt="Server"
+              h2
+                | Server
+            .hero__text
+              p
+                | Framework: Ruby on Rails
+              p
+                | Database: PostgreSQL
+              p
+                | Search: ElasticSearch
+          .grid__item.desk-4-12.space--both-8
+            .hero__heading
+              img.space--bottom-5 src="/images/client.png" alt="Client"
+              h2
+                | Client
+            .hero__text
+              p
+                | Framework: Angularjs
+              p
+                | Browser compatability: good support for HTML5 (Chrome, Firefox, Safari, Internet Explorer >= 10)
+          .grid__item.desk-4-12.space--both-8
+            .hero__heading
+              img.space--bottom-5 src="/images/crypto.png" alt="Cryptography"
+              h2
+                | Cryptography
+            .hero__text
+              p
+                | AES-256-CBC

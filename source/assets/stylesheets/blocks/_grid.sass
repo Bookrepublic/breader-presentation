@@ -8,7 +8,7 @@
   @each $total in $grid-cols
     @for $size from 1 to $total
       .#{$namespace}#{$size}-#{$total}
-        width: round-decimals($size / $total * 100%)
+        width: round-decimals((($size / $total) - 0.00327) * 100%)
 
 @mixin shift-setup($rule, $namespace: "")
   .#{$namespace}0
@@ -18,7 +18,7 @@
     @for $size from 1 to $total
       .#{$namespace}#{$size}-#{$total}
         position: relative
-        #{$rule}: round-decimals($size / $total * 100%)
+        #{$rule}: round-decimals((($size / $total) - 0.00327) * 100%)
 
 .grid
   +grid

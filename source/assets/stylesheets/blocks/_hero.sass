@@ -10,10 +10,18 @@
   width: 100%
   text-align: center
 
+.hero__body--h100
+  @extend .hero__body
+  +vertical-height(100)
+
 .hero__body__inner
   display: table-cell
   vertical-align: middle
   +vertical-padding(4)
+
+.hero__body__ruler
+  background: url('/images/ruler.png') repeat-x
+  +vertical-padding(6)
 
 .hero__heading
   +heading-font-family
@@ -23,13 +31,21 @@
   margin-right: auto
   max-width: 800px
 
+  img
+    width: 14rem
+
 .hero__text
-  +heading-font-family
+  +body-font-family
   +font-size(gamma)
   +margin-top(2)
   max-width: 750px
   margin-left: auto
   margin-right: auto
+
+.hero__image
+  background: url('/images/logo.png') no-repeat center
+  background-size: contain
+  +padding(12)
 
 .hero__actions
   +margin-top(2)
@@ -37,10 +53,56 @@
 .hero--primary
   @extend .hero
   background-color: $primary-color
-  color: white
+  color: $white
+
+  +at-breakpoint(lte-lap)
+    img
+      width: 14rem
 
   .hero__text a
-    color: white
+    color: $white
+
+.hero--secondary
+  @extend .hero--primary
+  background-color: $azure
+  +padding(2)
+
+.hero--third
+  @extend .hero--primary
+  background-color: $white
+  color: $primary-color
+
+.hero--fourth
+  @extend .hero--primary
+  background-color: $light-green
+
+.hero--fifth
+  @extend .hero--primary
+  background-color: $light-red
+
+.hero--sixth
+  @extend .hero--primary
+  background-color: $tourquise
+
+.hero--seventh
+  @extend .hero--primary
+  background-color: $yellow
+
+.hero--eighth
+  @extend .hero--primary
+  background-color: $dark-gray
+
+.hero--ninth
+  @extend .hero--primary
+  background-color: $purple
+
+.hero--tenth
+  @extend .hero--primary
+  background-color: $water
+
+.hero--eleventh
+  @extend .hero--primary
+  background-color: $orange
 
 +at-breakpoint(desk)
   .hero__heading
